@@ -43,12 +43,10 @@ def main():
         st.stop()  # Stop execution if no user is logged in.
     st.write(f"Hello, {username}! You're logged in.")
 
-    # Load configuration from .env file
-    config = dotenv_values(".env")
-    AccountName = config.get('AccountName')       # e.g., "OscarReady"
-    ResourceGroup = config.get('ResourceGroup')     # e.g., "Oscar_Ready"
-    # your Azure subscription ID
-    SubscriptionId = config.get('SubscriptionId')
+    # Load configuration from Streamlit secrets
+    AccountName = st.secrets["AccountName"]
+    ResourceGroup = st.secrets["ResourceGroup"]
+    SubscriptionId = st.secrets["SubscriptionId"]
 
     # Define additional parameters for the ARM-based Video Indexer resource
     ApiVersion = '2024-01-01'
