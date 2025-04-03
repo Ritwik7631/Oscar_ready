@@ -1,0 +1,10 @@
+streamlit>=1.24.0
+opencv-python
+numpy
+pandas>=2.0.0
+boto3
+cvlib
+tensorflow
+requests>=2.31.0
+azure-identity>=1.15.0
+python-dotenv>=1.0.0
