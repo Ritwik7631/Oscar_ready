@@ -44,9 +44,9 @@ def main():
     st.write(f"Hello, {username}! You're logged in.")
 
     # Load configuration from Streamlit secrets
-    AccountName = st.secrets["AccountName"]
-    ResourceGroup = st.secrets["ResourceGroup"]
-    SubscriptionId = st.secrets["SubscriptionId"]
+    AccountName = st.secrets["secrets"]["AccountName"]
+    ResourceGroup = st.secrets["secrets"]["ResourceGroup"]
+    SubscriptionId = st.secrets["secrets"]["SubscriptionId"]
 
     # Define additional parameters for the ARM-based Video Indexer resource
     ApiVersion = '2024-01-01'
