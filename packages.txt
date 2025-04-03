@@ -3,4 +3,7 @@ libglib2.0-0
 libsm6
 libxext6
 libxrender1
-libgl1-mesa-glx 
+libgl1-mesa-glx
+AccountName=OscarReady
+ResourceGroup=Oscar_Ready
+SubscriptionId=211f4cb7-c486-4422-995c-8d031d46c2cd
